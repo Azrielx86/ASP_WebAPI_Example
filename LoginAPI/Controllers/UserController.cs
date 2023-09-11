@@ -38,24 +38,6 @@ public class UserController : ControllerBase
     [HttpGet("msg")]
     public string Msg() => "It works!";
 
-    // [HttpPost]
-    // [AllowAnonymous]
-    // [Route("login")]
-    // public async Task<IActionResult> Login(LoginViewModel model)
-    // {
-    //     if (!ModelState.IsValid)
-    //         return BadRequest(ModelState);
-    //
-    //     var result = await _signInManager.PasswordSignInAsync(model.Email!, model.Password!, model.RememberMe,
-    //         lockoutOnFailure: false);
-    //
-    //     if (result.Succeeded)
-    //         return RedirectToAction("Msg");
-    //
-    //     ModelState.AddModelError(string.Empty, "Incorrect User or Password.");
-    //     return BadRequest(model);
-    // }
-
     [HttpPost]
     [AllowAnonymous]
     [Route("register")]
